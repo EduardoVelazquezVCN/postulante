@@ -1,0 +1,30 @@
+#titulo{
+    color: rgb(201, 249, 250);
+    text-align: center;
+    background-color: rgb(5, 84, 86);
+    margin-top: 5px;
+}
+#subtitulo{
+    color: rgb(201, 249, 250);
+    text-align: left;
+    background-color: rgb(1, 42, 42);
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+#form{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+#botonEnviar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#header a{
+    color: white;
+}
+#header button{
+    background-color: white;
+
+}
