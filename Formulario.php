@@ -42,8 +42,12 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="Formulario.html">Formulario</a>
+                
                         <a class="nav-link" href="#">Nosotros</a>
-                        <a class="nav-link" href="index.php">Salir</a>
+                        <form action="cerrarSesion.php" >
+                            <input id="formcloseSesion" type="submit" class="nav-link"  name="sesionDestroy" value="Cerrar Sesion">
+                        </form>
+                        
                     </div>
                 </div>
             </div>
