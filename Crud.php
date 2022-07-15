@@ -537,7 +537,13 @@ class ClaseKerkly {
             }
       
         }
-       
+    
+        /*INICIO arreglo de hora mexico y no del servidor*/
+        date_default_timezone_set('America/Mexico_City');
+        date_default_timezone_get();
+        $horaMexico= date('Y-m-d H:i:s');
+        /*$horaMexico=date("Y-d-m H:i:s");*/
+        /*FIN arreglo de hora mexico y no del servidor*/
 
          //echo " todo bien";
          /*$sqlInsertDireccion = "INSERT INTO direccion (Estado, Ciudad, Codigo_Postal, Colonia, Calle, No_Interior, No_Exterior) VALUES('$Estado','$Localidad', '$codigoP','$Colonia','$calle','$NoInt', '$NoExt')";
@@ -555,7 +561,7 @@ class ClaseKerkly {
          VALUES ('$Brigadista','$Brigada','$Nombre','$ApellidoP','$ApellidoM','$Curp','$FechaN','$genero','$Nacionalidad',
          '$EstadoC','$email','$Telefonofijo','$TelefonoMovil','$Municipio','$telNegocio','$masOficios','$db_url_img',
          '$db_url_img3','$db_url_img4','$db_url_img5','$db_url_img6','$db_url_img7','$db_url_img8','$db_url_img9','$db_url_img10',
-         '$db_url_img11','$db_url_img12','$db_url_img13','$Estado','$Localidad', '$codigoP','$Colonia','$calle','$NoInt', '$NoExt', NOW())";
+         '$db_url_img11','$db_url_img12','$db_url_img13','$Estado','$Localidad', '$codigoP','$Colonia','$calle','$NoInt', '$NoExt', '$horaMexico')";
 
          if(mysqli_query($con,$insertar)){
             echo "<script>
