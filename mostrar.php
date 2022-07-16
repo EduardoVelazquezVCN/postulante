@@ -4,6 +4,8 @@
     if($inc){
         $consulta = "SELECT * FROM postulante";
         $resultado = mysqli_query($con,$consulta);
+
+       
         if($resultado){
             while($row = $resultado->fetch_array()){
                 $id_postulante  = $row['id_postulante'];
@@ -52,17 +54,24 @@
                 $fechaRegistro = $row['fechaRegistro'];
                 ?>
                 <div>
-                    <h3><?php echo 'Brigadista: ' ,$brigadista , ' | Brigada:  ', $brigada , ' | Fecha de Registro:  ', $fechaRegistro;?></h3>
                     <div>
                         <p>
-                            <b>id: </b><?php echo $id_postulante;?><br>
-                            <b>Nombre postulante: </b><?php echo $Nombre, ' ' , $Apellido_Paterno, ' ', $Apellido_Materno;?><br>
-                            <b>Oficios: </b><?php echo $masOficios;?><br>
-                            <b>Colonia: </b><?php echo $Colonia;?><br>
-                            <b>Telefono Negocio: </b><?php echo $telNegocio;?><br>
-                            <b>Correo Electronico: </b><?php echo $correo_electronico;?><br>
-                            <b>Foto local: </b><?php echo $fotoLocal;?><br>
-                            <b>Estado Civil: </b><?php echo $EstadoCivil;?><br>
+        
+                            <table id="table" class="table table-striped">
+                                
+                                <tbody>
+                                    <tr>
+                                    <th scope="row"><?php echo $id_postulante;?></th>
+                                    <td><?php echo $Nombre, ' ' , $Apellido_Paterno, ' ', $Apellido_Materno;?></td>
+                                    <td><?php echo $masOficios;?></td>
+                                    <td><?php echo $Colonia;?></td>
+                                    <td><?php echo $telNegocio;?></td>
+                                    <td><?php echo $Telefono;?></td>
+                                    <td><?php echo $fotoLocal;?></td>
+                                    <td><?php echo $fechaRegistro;?></td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
                         </p>
                     </div>
