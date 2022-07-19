@@ -52,6 +52,7 @@
         <hr>
     <h1>Registros</h1>
     <hr>
+    <!-- 
     <table id="table" class="table table-dark">
         <thead>
             <tr>
@@ -66,13 +67,11 @@
             </tr>
         </thead>
                                 
-    </table>
+    </table>-->
     <?php
     include_once("mostrar.php");
     ?>
-    <form action="cerrarSesion.php" >
-        <input id="formcloseSesion" type="submit" class="nav-link"  name="sesionDestroy" value="Cerrar Sesion">
-    </form>
+    
 
 </body>
 </html>
