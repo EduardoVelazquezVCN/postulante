@@ -71,7 +71,14 @@
     <?php
     include_once("mostrar.php");
     ?>
-    
-
+    <div id="descargaExcel">
+         <form action="exportarTablaPostulante.php" >
+        <input id="crearExcel" type="submit" class="nav-link"  name="sesionDestroy" value="Descargar Archivo .XLSX">
+    </form>
+    </div>
+   
+    <!--<script src="exportarExcel.js"></script>
+    <button onclick="exportTableToExcel('table')">Export Table Data To Excel File</button>
+    -->
 </body>
 </html>
